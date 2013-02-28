@@ -155,7 +155,7 @@ $(function(){
               type: "GET",
               url: "request.php",
               data: "apiKey=" + apiKeyCookie + "&updateId=" + getTaskId + "&estimatedHours=" + getEstimatedHours + "&estimatedMinutes=" + getEstimatedMinutes + "&workedHours=" + newHours + "&workedMinutes=" + newMinutes + "&taskName=" + getTaskName,
-              timeout: 30000,
+              timeout: 90000,
               success: function( result ) {
                  // update was successful
                  workspaceRefresh.removeClass('disabled');
